@@ -4,67 +4,126 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/styles.css">
     <title>Brassero Grill</title>
+    <link rel="Stylesheet" href="../styles/styles.css">
 </head>
-<body>
-    <header>
-        <nav>   
-        <ul class="barraNavegacion">
-            <li> 
-                <a href="../index.html">INICIO</a>
-            </li>
-            <li> 
-                <a href="./menu.html">MENU</a>
-            </li>
-            <li> 
-                <a href="./nosotros.html">NOSOTROS</a>
-            </li>
-            <li>
-                <a href="./galeria.html">GALERIA</a>
-            </li>
-            <li> 
-                <a href="./contacto.html">CONTACTO</a>
-            </li>
-        </ul>
+
+<body class="container">
+
+        <div class="logo">
+            <picture>
+                <source media="(min-width:600px )" srcset="../images/logo.jpg">
+                <img src="../images/logoMobile.jpg" alt="Logotipo">    
+            </picture>
+
+            
+        </div>
+
+        <header class="header">
+            <input type="checkbox" id="btn-menu">
+        <label for="btn-menu"><img src="../images/menu.png" alt="Menu"></label>
+        <nav class="menu">
+            <ul class="menu">
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="./menu.html">MENU</a></li>
+                <li><a href="./nosotros.html">NOSOTROS</a></li>
+                <li><a href="./galeria.html">GALERIA</a></li>
+                <li><a href="./contacto.html">CONTACTO</a></li>
+            </ul> 
         </nav>
-    
-    </header>
-    <main>
-        <h1 class="galeriaText">GALERIA DE IMAGENES</h1>
-        <section class="galeria">
-            <table>
-                <tr>
-                    <td><a href="../images/galeria01.jpg" target="_blank"><img src="../images/galeria01thumb.jpg" alt="Galeria 1"></a></td>
-                    <td><a href="../images/galeria02.jpg" target="_blank"><img src="../images/galeria02thumb.jpg" alt="Galeria 2"></a></td>
-                    <td><a href="../images/galeria03.jpg" target="_blank"><img src="../images/galeria03thumb.jpg" alt="Galeria 3"></a></td>
-                    <td><a href="../images/galeria04.jpg" target="_blank"><img src="../images/galeria04thumb.jpg" alt="Galeria 4"></a></td>
-                </tr>
-                <tr>
-                    <td><a href="../images/galeria05.jpg" target="_blank"><img src="../images/galeria05thumb.jpg" alt="Galeria 5"></a></td>
-                    <td><a href="../images/galeria06.jpg" target="_blank"><img src="../images/galeria06thumb.jpg" alt="Galeria 6"></a></td>
-                    <td><a href="../images/galeria07.jpg" target="_blank"><img src="../images/galeria07thumb.jpg" alt="Galeria 7"></a></td>
-                    <td><a href="../images/galeria08.jpg" target="_blank"><img src="../images/galeria08thumb.jpg" alt="Galeria 8"></a></td>
-                </tr>
-                <tr>
-                    <td><a href="../images/galeria09.jpg" target="_blank"><img src="../images/galeria09thumb.jpg" alt="Galeria 9"></a></td>
-                    <td><a href="../images/galeria10.jpg" target="_blank"><img src="../images/galeria10thumb.jpg" alt="Galeria 10"></a></td>
-                    <td><a href="../images/galeria11.jpg" target="_blank"><img src="../images/galeria11thumb.jpg" alt="Galeria 11"></a></td>
-                    <td><a href="../images/galeria12.jpg" target="_blank"><img src="../images/galeria12thumb.jpg" alt="Galeria 12"></a></td>
-                </tr>
-            </table>
-        </section>
-    </main>
-    <footer>
-        <nav>
-            <ul class="barraFooter">
-                <li><a href="https://www.facebook.com/BrasseroGrill" target="_blank"><img src="../images/facebook.png" alt=""></a></li>
-                <li><a href="https://twitter.com/BrasseroGrill" target="_blank"><img src="../images/twitter.png" alt=""></a></li>
-                <li><a href="https://www.instagram.com/brasserogrill/" target="_blank"><img src="../images/insta.png" alt=""></a></li>
-                <li><a href="#" target="_blank"><img src="../images/whatsapp.png" alt=""></a></li>
+        </header>
+        
+        <div class="redes">
+            <div>
+                <a href="https://www.facebook.com/BrasseroGrill" target="_blank">
+                <img src="../images/facebook.png" alt="Facebook"></a>
+            </div>
+            <div>
+                <a href="https://www.instagram.com/brasserogrill/" target="_blank">
+                <img src="../images/insta.png" alt="Instagram"></a>
+            </div>
+            <div>
+                <a href="https://twitter.com/BrasseroGrill" target="_blank">
+                <img src="../images/twitter.png" alt="Twitter"></a>
+            </div>
+            <div>
+                <a href="#">
+                <img src="../images/whatsapp.png" alt="WhatsApp"></a>
+            </div>
+        </div>
+        
+        <nav class="noticia">
+            <h2 class="tituloNoticia">NOTICIAS</h2>
+            <div class="imageNews">
+                <picture>
+                    <source media="(min-width:600px )" srcset="../images/cerradoTablet.jpg">
+                    <source media="(min-width:1000px )" srcset="../images/cerrado.jpg">
+                    <img src="../images/cerradoMobile.jpg" alt="Logotipo">    
+                </picture>
+            </div>
+            <p class="noticiaUno">Hola amigos y familia. Uno de los miembros de nuestro equipo no se siente bien y se está haciendo la prueba de Covid. Dicho esto, nos tomamos un merecido descanso, ya que tenemos que parar las operaciones para asegurarnos de mantener saludables a nuestros clientes.
+            ¡Gracias por mantenernos ocupados, mucho amor y aprecio a todos ustedes! ¡Desde el covid nada ha sido fácil especialmente para los pequeños negocios!
+            ¡Estén atentos para cualquier actualización!</p>
+        </nav>
+        
+        <aside class="publicidad">
+            <picture>
+                <source media="(min-width:1000px )" srcset="../images/publicidadDesktop.jpg">
+                <source media="(min-width:600px )" srcset="../images/publicidadTablet.jpg">
+                <img src="../images/publicidadMobile.jpg" alt="Publicidad">
+            </picture>
+        </aside>
+        
+        <main class="main">
+            <div><h1 class="tituloGaleria">GALERIA</h1></div>
+            <div class="galeria">
+                <div><a href="../images/galeria01.jpg" target="_blank"><img src="../images/galeria01thumb.jpg" alt="Galeria 1"></a></div>
+                <div><a href="../images/galeria02.jpg" target="_blank"><img src="../images/galeria02thumb.jpg" alt="Galeria 1"></a></div>
+                <div><a href="../images/galeria03.jpg" target="_blank"><img src="../images/galeria03thumb.jpg" alt="Galeria 1"></a></div>
+                <div><a href="../images/galeria04.jpg" target="_blank"><img src="../images/galeria04thumb.jpg" alt="Galeria 1"></a></div>
+                <div><a href="../images/galeria05.jpg" target="_blank"><img src="../images/galeria05thumb.jpg" alt="Galeria 1"></a></div>
+                <div><a href="../images/galeria06.jpg" target="_blank"><img src="../images/galeria06thumb.jpg" alt="Galeria 1"></a></div>
+                <div><a href="../images/galeria07.jpg" target="_blank"><img src="../images/galeria07thumb.jpg" alt="Galeria 1"></a></div>
+                <div><a href="../images/galeria08.jpg" target="_blank"><img src="../images/galeria08thumb.jpg" alt="Galeria 1"></a></div>
+                <div><a href="../images/galeria09.jpg" target="_blank"><img src="../images/galeria09thumb.jpg" alt="Galeria 1"></a></div>
+                <div><a href="../images/galeria10.jpg" target="_blank"><img src="../images/galeria10thumb.jpg" alt="Galeria 1"></a></div>
+                <div><a href="../images/galeria11.jpg" target="_blank"><img src="../images/galeria11thumb.jpg" alt="Galeria 1"></a></div>
+                <div><a href="../images/galeria12.jpg" target="_blank"><img src="../images/galeria12thumb.jpg" alt="Galeria 1"></a></div>
+            </div>
+        </main>
+        
+        <div class="suscribete">
+            <form action="#" class="formulario">
+                <div>
+                <span>Suscríbete a nuestro boletín</span>
+                </div>
+                <div>
+                <label for="nombre">Nombre:</label>
+                <input class="entrada" type="text" placeholder="Escribe tu nombre">
+                </div>
+                <div><label for="email">E-mail:</label>
+                <input class="entrada" type="email" placeholder="Escribe tu e-mail" name="email">
+                </div>
+                <div>
+                <input class="boton" type="submit" value="Enviar" >
+                <input class="boton" type="reset" value="Borrar" >
+                </div>
+                </form>
+        </div>
+
+        <footer class="footer">
+            <div>532 Braddock ave Braddock, Pensilvania, Estados Unidos 15104 </div><div>Teléfono: +1 412-265-8967 | brasserogrill@gmail.com</div><div> Reservaciones | Eventos | Facturación | Alianzas | Blog</div>
+        </footer>
+
+        <div class="copyright">
+            <ul class="copy">
+                <li>Copyright</li>
+                <li>Política de Privacidad</li>
+                <li>Ley de Cookies</li>
+                <li>Aviso Legal</li>
+                <li>Preguntas Frecuentes</li>
             </ul>
-        </nav>
-        <p>Copyright 2022 © brasserogrill.com</p>
-    </footer>
+            </div>
+        </div>
+
 </body>
-</html>

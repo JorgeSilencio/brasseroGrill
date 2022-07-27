@@ -4,56 +4,132 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/styles.css">
     <title>Brassero Grill</title>
+    <link rel="Stylesheet" href="../styles/styles.css">
 </head>
-<body>
-    <header>
-        <nav>   
-        <ul class="barraNavegacion">
-            <li> 
-                <a href="../index.html">INICIO</a>
-            </li>
-            <li> 
-                <a href="./menu.html">MENU</a>
-            </li>
-            <li> 
-                <a href="./nosotros.html">NOSOTROS</a>
-            </li>
-            <li>
-                <a href="./galeria.html">GALERIA</a>
-            </li>
-            <li> 
-                <a href="./contacto.html">CONTACTO</a>
-            </li>
-        </ul>
+
+<body class="container">
+
+        <div class="logo">
+            <picture>
+                <source media="(min-width:600px )" srcset="../images/logo.jpg">
+                <img src="../images/logoMobile.jpg" alt="Logotipo">    
+            </picture>
+
+            
+        </div>
+
+        <header class="header">
+            <input type="checkbox" id="btn-menu">
+        <label for="btn-menu"><img src="../images/menu.png" alt="Menu"></label>
+        <nav class="menu">
+            <ul class="menu">
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="./menu.html">MENU</a></li>
+                <li><a href="./nosotros.html">NOSOTROS</a></li>
+                <li><a href="./galeria.html">GALERIA</a></li>
+                <li><a href="./contacto.html">CONTACTO</a></li>
+            </ul> 
         </nav>
-    
-    </header>
-    <main>
-        <h1>Ven a conocernos</h1>
-        <p class="braseroEs">Brassero Grill es un restaurante y Food Truck con un concepto fresco de tacos, quesadillas y burritos con ingredientes simples y frescos.</p>
-        <p class="braseroEs">¡La mayoría de nuestros productos son locales y orgánicos para hacer comida fusión saludable mexicana no tradicional!</p>
-    <section class="conocenos">
-        <table>
-            <tr>
-                <td><img src="../images/brassero2.jpg" alt="brassero fuera"></td>
-                <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.2239983991767!2d-79.87174578427704!3d40.40388826434362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834eef7478b3947%3A0xebd17e0eaf6aecfc!2sBrassero%20Grill!5e0!3m2!1ses!2smx!4v1655604972231!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
-                <td><img src="../images/brassero1.jpg" alt="brassero dentro"></td>
-            </tr>
-        </table>
-	</section>
-    </main>
-    <footer>
-        <nav>
-            <ul class="barraFooter">
-                <li><a href="https://www.facebook.com/BrasseroGrill" target="_blank"><img src="../images/facebook.png" alt=""></a></li>
-                <li><a href="https://twitter.com/BrasseroGrill" target="_blank"><img src="../images/twitter.png" alt=""></a></li>
-                <li><a href="https://www.instagram.com/brasserogrill/" target="_blank"><img src="../images/insta.png" alt=""></a></li>
-                <li><a href="#" target="_blank"><img src="../images/whatsapp.png" alt=""></a></li>
+        </header>
+        
+        <div class="redes">
+            <div>
+                <a href="https://www.facebook.com/BrasseroGrill" target="_blank">
+                <img src="../images/facebook.png" alt="Facebook"></a>
+            </div>
+            <div>
+                <a href="https://www.instagram.com/brasserogrill/" target="_blank">
+                <img src="../images/insta.png" alt="Instagram"></a>
+            </div>
+            <div>
+                <a href="https://twitter.com/BrasseroGrill" target="_blank">
+                <img src="../images/twitter.png" alt="Twitter"></a>
+            </div>
+            <div>
+                <a href="#">
+                <img src="../images/whatsapp.png" alt="WhatsApp"></a>
+            </div>
+        </div>
+        
+        <nav class="noticia">
+            <h2 class="tituloNoticia">NOTICIAS</h2>
+            <div class="imageNews">
+                <picture>
+                    <source media="(min-width:600px )" srcset="../images/cerradoTablet.jpg">
+                    <source media="(min-width:1000px )" srcset="../images/cerrado.jpg">
+                    <img src="../images/cerradoMobile.jpg" alt="Logotipo">    
+                </picture>
+            </div>
+            <p class="noticiaUno">Hola amigos y familia. Uno de los miembros de nuestro equipo no se siente bien y se está haciendo la prueba de Covid. Dicho esto, nos tomamos un merecido descanso, ya que tenemos que parar las operaciones para asegurarnos de mantener saludables a nuestros clientes.
+            ¡Gracias por mantenernos ocupados, mucho amor y aprecio a todos ustedes! ¡Desde el covid nada ha sido fácil especialmente para los pequeños negocios!
+            ¡Estén atentos para cualquier actualización!</p>
+        </nav>
+        
+        <aside class="publicidad">
+            <picture>
+                <source media="(min-width:1000px )" srcset="../images/publicidadDesktop.jpg">
+                <source media="(min-width:600px )" srcset="../images/publicidadTablet.jpg">
+                <img src="../images/publicidadMobile.jpg" alt="Publicidad">
+            </picture>
+        </aside>
+        
+        <main class="main">
+            <h1 class="tituloConoce">Ven a conocernos</h1>
+            <div class="brasseroEs">
+                <p>Brassero Grill es un restaurante y Food Truck con un concepto fresco de tacos, quesadillas y burritos con ingredientes simples y frescos.</p>
+                <p>¡La mayoría de nuestros productos son locales y orgánicos para hacer comida fusión saludable mexicana no tradicional!</p>
+            </div>
+        <section class="conocenos">
+            <div class="flex-nosotros">
+                <div>
+                    <div>Exterior</div>
+                    <img src="../images/brassero1.jpg" alt="brassero fuera">
+                </div>
+                <div>
+                    <div>Mapa</div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.2239983991767!2d-79.87174578427704!3d40.40388826434362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834eef7478b3947%3A0xebd17e0eaf6aecfc!2sBrassero%20Grill!5e0!3m2!1ses!2smx!4v1655604972231!5m2!1ses!2smx" width="auto" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div>
+                    <div>Interior</div>
+                    <img src="../images/brassero2.jpg" alt="brassero dentro">
+                </div>
+        </div>        
+        </section>
+        </main>
+        
+        <div class="suscribete">
+            <form action="#" class="formulario">
+                <div>
+                <span>Suscríbete a nuestro boletín</span>
+                </div>
+                <div>
+                <label for="nombre">Nombre:</label>
+                <input class="entrada" type="text" placeholder="Escribe tu nombre">
+                </div>
+                <div><label for="email">E-mail:</label>
+                <input class="entrada" type="email" placeholder="Escribe tu e-mail" name="email">
+                </div>
+                <div>
+                <input class="boton" type="submit" value="Enviar" >
+                <input class="boton" type="reset" value="Borrar" >
+                </div>
+                </form>
+        </div>
+
+        <footer class="footer">
+            <div>532 Braddock ave Braddock, Pensilvania, Estados Unidos 15104 </div><div>Teléfono: +1 412-265-8967 | brasserogrill@gmail.com</div><div> Reservaciones | Eventos | Facturación | Alianzas | Blog</div>
+        </footer>
+
+        <div class="copyright">
+            <ul class="copy">
+                <li>Copyright</li>
+                <li>Política de Privacidad</li>
+                <li>Ley de Cookies</li>
+                <li>Aviso Legal</li>
+                <li>Preguntas Frecuentes</li>
             </ul>
-        </nav>
-        <p>Copyright 2022 © brasserogrill.com</p>
-    </footer>
+            </div>
+        </div>
+
 </body>
-</html>

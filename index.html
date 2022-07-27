@@ -4,74 +4,141 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/styles.css">
     <title>Brassero Grill</title>
+    <link rel="Stylesheet" href="./styles/styles.css">
 </head>
-<body>
-    <header>
-        <div>
+
+<body class="container">
+
+        <div class="logo">
+            <picture>
+                <source media="(min-width:600px )" srcset="images/logo.jpg">
+                <img src="./images/logoMobile.jpg" alt="Logotipo">    
+            </picture>
+
             
         </div>
-        <nav>   
-        <ul class="barraNavegacion">
-            <li> 
-                <a href="index.html">INICIO</a>
-            </li>
-            <li> 
-                <a href="./sections/menu.html">MENU</a>
-            </li>
-            <li> 
-                <a href="./sections/nosotros.html">NOSOTROS</a>
-            </li>
-            <li>
-                <a href="./sections/galeria.html">GALERIA</a>
-            </li>
-            <li> 
-                <a href="./sections/contacto.html">CONTACTO</a>
-            </li>
-        </ul>
+
+        <header class="header">
+            <input type="checkbox" id="btn-menu">
+        <label for="btn-menu"><img src="./images/menu.png" alt="Menu"></label>
+        <nav class="menu">
+            <ul class="menu">
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="./sections/menu.html">MENU</a></li>
+                <li><a href="./sections/nosotros.html">NOSOTROS</a></li>
+                <li><a href="./sections/galeria.html">GALERIA</a></li>
+                <li><a href="./sections/contacto.html">CONTACTO</a></li>
+            </ul> 
         </nav>
-    </header>
-    <main>
-        <section class="fondoMain">
+        </header>
+        
+        <div class="redes">
+            <div>
+                <a href="https://www.facebook.com/BrasseroGrill" target="_blank">
+                <img src="./images/facebook.png" alt="Facebook"></a>
+            </div>
+            <div>
+                <a href="https://www.instagram.com/brasserogrill/" target="_blank">
+                <img src="./images/insta.png" alt="Instagram"></a>
+            </div>
+            <div>
+                <a href="https://twitter.com/BrasseroGrill" target="_blank">
+                <img src="./images/twitter.png" alt="Twitter"></a>
+            </div>
+            <div>
+                <a href="#">
+                <img src="./images/whatsapp.png" alt="WhatsApp"></a>
+            </div>
+        </div>
+        
+        <nav class="noticia">
+            <h2 class="tituloNoticia">NOTICIAS</h2>
+            <div class="imageNews">
+                <picture>
+                    <source media="(min-width:600px )" srcset="images/cerradoTablet.jpg">
+                    <source media="(min-width:1000px )" srcset="images/cerrado.jpg">
+                    <img src="./images/cerradoMobile.jpg" alt="Logotipo">    
+                </picture>
+            </div>
+            <p class="noticiaUno">Hola amigos y familia. Uno de los miembros de nuestro equipo no se siente bien y se está haciendo la prueba de Covid. Dicho esto, nos tomamos un merecido descanso, ya que tenemos que parar las operaciones para asegurarnos de mantener saludables a nuestros clientes.
+            ¡Gracias por mantenernos ocupados, mucho amor y aprecio a todos ustedes! ¡Desde el covid nada ha sido fácil especialmente para los pequeños negocios!
+            ¡Estén atentos para cualquier actualización!</p>
+        </nav>
+        
+        <aside class="publicidad">
+            <picture>
+                <source media="(min-width:1000px )" srcset="images/publicidadDesktop.jpg">
+                <source media="(min-width:600px )" srcset="images/publicidadTablet.jpg">
+                <img src="./images/publicidadMobile.jpg" alt="Publicidad">
+            </picture>
+        </aside>
+        
+        <main class="main">
+            <section class="fondoMain">
             <div>
                 <h1 class="titulo">BRASSERO GRILL</h1>
             </div>
             <div class="logotipo">
-            <img src="./images/logo.png" alt="Logotipo"> 
+            <img src="./images/logoGrande.png" alt="Logotipo"> 
             </div>
             <div>
                 <h2 class="titulo2">Calidad orgullosamente mexicana</h2><br>
             </div>
-        </section>
-        <section class="section2">
-        <div>
+            </section>
+    
+        <div class="multimedia">
             <section class="conoce">
                 Ven HOY a conocer nuestros nuevos y deliciosos platillos
             </section>
-            </div>
-            <div>
+            <div class="recomendaciones">
             <article>
                 <p>Recomendaciones</p>
-                <a href="./sections/menu.html"><img src="./images/carne.jpg" alt="Recomendaciones"></a>
+                <a href="./sections/menu.html">
+                    <picture>
+                        <img src="./images/carne.jpg" alt="Recomendaciones" class="imagenCarne"></a>     
+                    </picture>
             </article>
             <article>
-                <a href="./sections/galeria.html" class="videos"><p>Mira nuestros nuevos videos</p></a>
-                <iframe width="450" height="254" src="https://www.youtube-nocookie.com/embed/Pe_0PMDtegc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <a href="./sections/galeria.html" class="videos"><p class="videos">Mira nuestros nuevos videos</p></a>
+                <iframe width="350" height="198" src="https://www.youtube-nocookie.com/embed/Pe_0PMDtegc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="imagenVideo"></iframe>
             </article>
-        </div>
+            </div>
         </section>
-    </main>
-    <footer>
-        <nav>
-            <ul class="barraFooter">
-                <li><a href="https://www.facebook.com/BrasseroGrill" target="_blank"><img src="./images/facebook.png" alt=""></a></li>
-                <li><a href="https://twitter.com/BrasseroGrill" target="_blank"><img src="./images/twitter.png" alt=""></a></li>
-                <li><a href="https://www.instagram.com/brasserogrill/" target="_blank"><img src="./images/insta.png" alt=""></a></li>
-                <li><a href="#" target="_blank"><img src="./images/whatsapp.png" alt=""></a></li>
+        </main>
+        
+        <div class="suscribete">
+            <form action="#" class="formulario">
+                <div>
+                <span>Suscríbete a nuestro boletín</span>
+                </div>
+                <div>
+                <label for="nombre">Nombre:</label>
+                <input class="entrada" type="text" placeholder="Escribe tu nombre">
+                </div>
+                <div><label for="email">E-mail:</label>
+                <input class="entrada" type="email" placeholder="Escribe tu e-mail" name="email">
+                </div>
+                <div>
+                <input class="boton" type="submit" value="Enviar" >
+                <input class="boton" type="reset" value="Borrar" >
+                </div>
+                </form>
+        </div>
+
+        <footer class="footer">
+            <div>532 Braddock ave Braddock, Pensilvania, Estados Unidos 15104 </div><div>Teléfono: +1 412-265-8967 | brasserogrill@gmail.com</div><div> Reservaciones | Eventos | Facturación | Alianzas | Blog</div>
+        </footer>
+
+        <div class="copyright">
+            <ul class="copy">
+                <li>Copyright</li>
+                <li>Política de Privacidad</li>
+                <li>Ley de Cookies</li>
+                <li>Aviso Legal</li>
+                <li>Preguntas Frecuentes</li>
             </ul>
-        </nav>
-        <p>Copyright 2022 © brasserogrill.com</p>
-    </footer>
+            </div>
+        </div>
+
 </body>
-</html>
