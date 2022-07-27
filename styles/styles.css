@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@600&family=Work+Sans:wght@300&display=swap');
+
+/*
+font-family: 'Hind', sans-serif;
+font-family: 'Work Sans', sans-serif;
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #F27405;
+    padding: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+.barraNavegacion li {
+    display: inline-block;
+    font-size: 18px;
+}
+
+.barraNavegacion li a {
+    text-decoration: none;
+    font-family: 'Hind', sans-serif;
+    color: #080808;
+    display: inline-block;
+    text-align: center;
+    font-size:  25px;
+    margin-left: 250px;
+}
+
+main {
+    font-family: 'Work Sans', sans-serif;
+    color: black;
+}
+
+h1 {
+    font-family: 'Hind', sans-serif;
+}
+
+.fondoMain {
+    background-image: url("../images/fondo.jpg");
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.titulo {
+    color: #ffffff;
+    border:1px solid;
+    font-family: 'Hind', sans-serif;
+    font-size: 75px;
+    text-align: center;
+    text-shadow: 3px 3px #000000;
+}
+
+.logotipo {
+    margin-top: 20px;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+
+.titulo2 {
+    color: #ffffff;
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 3px 3px #000000;
+}
+
+.section2 {
+    margin-top: 20px;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    text-align: center;
+}
+
+.conoce {
+    color: white;
+    border:1px solid;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 30px;
+    text-align: center;  
+    background-color: red;
+}
+
+.videos {
+    text-decoration: none;
+}
+.formulario {
+    width: 500px;
+    background-color: antiquewhite;
+    padding: 30px;
+    margin: auto;
+    border-radius: 5px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.entrada {
+    width: 100%;
+    padding: 10px;
+    font-family: 'Work Sans', sans-serif;
+    border: none;
+    outline: none;
+}
+
+.areatexto {
+    width: 100%;
+    padding: 10px;
+    font-family: 'Work Sans', sans-serif;
+    border: none;
+    outline: none;
+}
+
+.contacto {
+    text-align: center;
+}
+
+p {
+    font-family: 'Work Sans', sans-serif;
+    color: black;
+}
+
+.mapa {
+    margin-top: 20px;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.conocenos {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+
+.braseroEs {
+    text-align: center;
+}
+
+.galeriaText {
+    font-family: 'Hind', sans-serif;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+
+.galeria {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content; 
+}
+
+.precio {
+    color: red;
+}
+
+.menu {
+    width: 800px;
+    background-color: antiquewhite;
+    padding: 30px;
+    margin: auto;
+    border-radius: 5px;
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+}
+
+footer {
+    background-color: #fdb270;
+}
+
+.barraFooter li {
+    display: inline-block;
+    margin-left: 350px;
+    margin-top: 15px;
+}
