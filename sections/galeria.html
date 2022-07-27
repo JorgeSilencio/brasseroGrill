@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brassero Grill</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="Stylesheet" href="../styles/styles.css">
 </head>
 
@@ -20,17 +21,27 @@
         </div>
 
         <header class="header">
-            <input type="checkbox" id="btn-menu">
-        <label for="btn-menu"><img src="../images/menu.png" alt="Menu"></label>
-        <nav class="menu">
-            <ul class="menu">
-                <li><a href="../index.html">INICIO</a></li>
-                <li><a href="./menu.html">MENU</a></li>
-                <li><a href="./nosotros.html">NOSOTROS</a></li>
-                <li><a href="./galeria.html">GALERIA</a></li>
-                <li><a href="./contacto.html">CONTACTO</a></li>
-            </ul> 
-        </nav>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light" style="font-family: 'Hind', sans-serif;">
+                <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">INICIO</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./menu.html">Menu</a>
+                    </li>
+                    <a class="nav-link active" aria-current="page" href="./galeria.html">Galeria</a>
+                    </li>
+                    <a class="nav-link active" aria-current="page" href="./nosotros.html">Nosotros</a>
+                    </li>
+                    <a class="nav-link active" aria-current="page" href="./contacto.html">Contacto</a>
+                    </li>
+                    </ul>
+                    </div>
+                </div>
+            </nav>
         </header>
         
         <div class="redes">
@@ -77,18 +88,18 @@
         <main class="main">
             <div><h1 class="tituloGaleria">GALERIA</h1></div>
             <div class="galeria">
-                <div><a href="../images/galeria01.jpg" target="_blank"><img src="../images/galeria01thumb.jpg" alt="Galeria 1"></a></div>
-                <div><a href="../images/galeria02.jpg" target="_blank"><img src="../images/galeria02thumb.jpg" alt="Galeria 1"></a></div>
-                <div><a href="../images/galeria03.jpg" target="_blank"><img src="../images/galeria03thumb.jpg" alt="Galeria 1"></a></div>
-                <div><a href="../images/galeria04.jpg" target="_blank"><img src="../images/galeria04thumb.jpg" alt="Galeria 1"></a></div>
-                <div><a href="../images/galeria05.jpg" target="_blank"><img src="../images/galeria05thumb.jpg" alt="Galeria 1"></a></div>
-                <div><a href="../images/galeria06.jpg" target="_blank"><img src="../images/galeria06thumb.jpg" alt="Galeria 1"></a></div>
-                <div><a href="../images/galeria07.jpg" target="_blank"><img src="../images/galeria07thumb.jpg" alt="Galeria 1"></a></div>
-                <div><a href="../images/galeria08.jpg" target="_blank"><img src="../images/galeria08thumb.jpg" alt="Galeria 1"></a></div>
-                <div><a href="../images/galeria09.jpg" target="_blank"><img src="../images/galeria09thumb.jpg" alt="Galeria 1"></a></div>
-                <div><a href="../images/galeria10.jpg" target="_blank"><img src="../images/galeria10thumb.jpg" alt="Galeria 1"></a></div>
-                <div><a href="../images/galeria11.jpg" target="_blank"><img src="../images/galeria11thumb.jpg" alt="Galeria 1"></a></div>
-                <div><a href="../images/galeria12.jpg" target="_blank"><img src="../images/galeria12thumb.jpg" alt="Galeria 1"></a></div>
+                <div class="photo"><a href="../images/galeria01.jpg" target="_blank"><img src="../images/galeria01thumb.jpg" alt="Galeria 1"></a></div>
+                <div class="photo"><a href="../images/galeria02.jpg" target="_blank"><img src="../images/galeria02thumb.jpg" alt="Galeria 1"></a></div>
+                <div class="photo"><a href="../images/galeria03.jpg" target="_blank"><img src="../images/galeria03thumb.jpg" alt="Galeria 1"></a></div>
+                <div class="photo"><a href="../images/galeria04.jpg" target="_blank"><img src="../images/galeria04thumb.jpg" alt="Galeria 1"></a></div>
+                <div class="photo"><a href="../images/galeria05.jpg" target="_blank"><img src="../images/galeria05thumb.jpg" alt="Galeria 1"></a></div>
+                <div class="photo"><a href="../images/galeria06.jpg" target="_blank"><img src="../images/galeria06thumb.jpg" alt="Galeria 1"></a></div>
+                <div class="photo"><a href="../images/galeria07.jpg" target="_blank"><img src="../images/galeria07thumb.jpg" alt="Galeria 1"></a></div>
+                <div class="photo"><a href="../images/galeria08.jpg" target="_blank"><img src="../images/galeria08thumb.jpg" alt="Galeria 1"></a></div>
+                <div class="photo"><a href="../images/galeria09.jpg" target="_blank"><img src="../images/galeria09thumb.jpg" alt="Galeria 1"></a></div>
+                <div class="photo"><a href="../images/galeria10.jpg" target="_blank"><img src="../images/galeria10thumb.jpg" alt="Galeria 1"></a></div>
+                <div class="photo"><a href="../images/galeria11.jpg" target="_blank"><img src="../images/galeria11thumb.jpg" alt="Galeria 1"></a></div>
+                <div class="photo"><a href="../images/galeria12.jpg" target="_blank"><img src="../images/galeria12thumb.jpg" alt="Galeria 1"></a></div>
             </div>
         </main>
         
@@ -125,5 +136,6 @@
             </ul>
             </div>
         </div>
-
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
+</html>

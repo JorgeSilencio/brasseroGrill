@@ -13,7 +13,9 @@ font-family: 'Source Sans Pro', sans-serif;
 }
 
 html {
-    height: 100%;
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 body {
@@ -36,46 +38,11 @@ body {
 
 .header {
     grid-area: header;
-    width: 100%;
-    background: #BF2626;
-    font-family: 'Source Sans Pro', sans-serif;
-}
-
-#btn-menu {
-    display: none;
-}
-
-#btn-menu:checked ~ .menu {
-    margin: 0;
-}
-
-header label {
-    display: block;
-    width: 40px;
-    height: 40px;
-    padding: 5px;
-    border-right: 1px solid white;
-}
-
-header label:hover {
-    cursor: pointer;
-    background: rgba(0,0,0,0.3);
-}
-
-.menu {
-    position: absolute;
-    background: #BF2626;
-    margin-left: -70%;
-}
-
-.menu ul {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 18px;
-    margin: 0;
-    list-style: none;
-    padding: 0;
+    width: 100%;background: #BF2626;
     
+    font-family: 'Source Sans Pro', sans-serif;
 }
+
 
 .menu li a {
     display: block;
@@ -328,6 +295,13 @@ label {
     background-position: 80%;
 }
 
+.fondoMain:hover {
+    background-image: url("../images/fondo1.jpg");
+    background-repeat: no-repeat;
+    background-position: 80%;
+    transition: all 2s;
+}
+
 .titulo {
     color: #ffffff;
     font-family: 'Hind', sans-serif;
@@ -428,6 +402,17 @@ label {
 .formulario1 label {
     width: auto;
 }
+
+.photo:hover {
+    border: 4px solid black;
+    transform: rotate(-3deg);
+}
+
+.logotipo:hover {
+    transform: rotate(360deg);
+    transition: all .3s;
+}
+
 
 /*Mobile*/
 .container {
@@ -765,7 +750,14 @@ label {
             background-repeat: no-repeat;
             background-position: 80%;
         }
-        
+
+        .fondoMain:hover {
+            background-image: url("../images/fondo1.jpg");
+            background-repeat: no-repeat;
+            background-position: 80%;
+            transition: all 2s;
+        }
+
         .titulo {
             color: #ffffff;
             font-family: 'Hind', sans-serif;
@@ -867,6 +859,17 @@ label {
         .formulario1 label {
             width: auto;
         }
+
+        .photo:hover {
+            border: 4px solid black;
+            transform: rotate(-3deg);
+        }
+        
+        .logotipo:hover {
+            transform: rotate(360deg);
+            transition: all .3s;
+        }
+
 }
 
 /*Desktop*/
@@ -887,46 +890,6 @@ label {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-evenly; 
-        }
-
-        
-        header label {
-            display: none;
-        }
-    
-        .menu li:hover {
-            background: rgba(0,0,0,0.3);
-            border-radius: 15px;
-        }
-    
-        .menu ul {
-            font-family: 'Source Sans Pro', sans-serif;
-            font-size: 25px;
-            margin-top: 28px; 
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: row;
-            justify-content: space-around;
-        }
-    
-        .menu li {
-            flex-grow: 1;
-            text-align: center;
-            flex-direction: row;
-            
-        }
-    
-        .menu {
-            position: relative;
-            margin-left: 0%;
-        }
-    
-        #btn-menu:checked ~ .menu {
-            margin: 0;
-        }
-    
-        #btn-menu:checked ~ .menu {
-            margin: 0;
         }
 
         .noticia {
@@ -1179,6 +1142,13 @@ label {
             background-position: 80%;
         }
         
+        .fondoMain:hover {
+            background-image: url("../images/fondo1.jpg");
+            background-repeat: no-repeat;
+            background-position: 80%;
+            transition: all 2s;
+        }
+
         .titulo {
             color: #ffffff;
             font-family: 'Hind', sans-serif;
@@ -1280,4 +1250,15 @@ label {
         .formulario1 label {
             width: auto;
         }
+
+        .photo:hover {
+            border: 4px solid black;
+            transform: rotate(-3deg);
+        }
+        
+        .logotipo:hover {
+            transform: rotate(360deg);
+            transition: all .3s;
+        }
+
 }
