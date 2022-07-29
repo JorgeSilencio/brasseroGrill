@@ -12,64 +12,25 @@ font-family: 'Source Sans Pro', sans-serif;
     box-sizing: border-box;
 }
 
-html {
-    background-image: url("../images/background.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-body {
-    font-size: 1.2rem;
-    min-height: 100%;
-}
-
-.grid-container > * {
-    box-shadow:-1px 1px 7px 0px rgba (0, 0, 0, 0.75);
-    border-radius: 4 px;
-    padding: 10 px;
+.row {
     text-align: center;
-}
-
-.logo {
-    grid-area: logo;
-    text-align: center; 
-    margin-top: 5px;   
-}
-
-.header {
-    grid-area: header;
-    width: 100%;background: #BF2626;
-    
-    font-family: 'Source Sans Pro', sans-serif;
-}
-
-
-.menu li a {
-    display: block;
-    padding: 2px 2px;
-    text-decoration: none;
-    color: #ffffff;
-}
-
-.menu li:hover {
-    background: rgba(0,0,0,0.3);    
+    align-items: center;
+    align-items: center;
 }
 
 .redes {
-    grid-area: redes;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin-top: 35px;
+    margin-bottom: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly; 
 }
 
 .noticia {
-    grid-area: noticia;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 15px;
     line-height: 23px;
-    text-align: justify;
+    text-align: left;
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -92,201 +53,14 @@ body {
     border: solid 1px;
     background-color: #BF2626;
     color: #ffffff;
-    font-size: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-}
-
-.main {
-    grid-area: main;
-    background-color: #f5f5f5;
-    border-radius: 20px;
-    padding: 30px;
-}
-
-.publicidad {
-    grid-area: publicidad;
-    text-align: center;
-    width: 100%;
-}
-
-.suscribete {
-    grid-area: suscribete;
-    text-align: center;
-}
-
-.entrada {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 10px;
-}
-
-label {
-    display: inline-block;
-    width: 60px;
-}
-
-.boton {
-    font-size:10px;
-    color:white;
-    background:#3d97f1;
-    border: 0px;
-    width: 80px;
-    height: 20px;
-    margin-top: 10px;
-}
-
-.footer {
-    grid-area: footer;
-    text-align: center;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 15px;
-    margin-bottom: 10px;
-    margin-top: 20px;
-}
-
-.copyright {
-    grid-area: copyright;
-}
-
-.copy {
-    font-family: 'Source Sans Pro', sans-serif;
-    text-align: center;
-    font-size: 13px;
-    margin-top: 5px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    list-style: none;
-    
-}
-
-.conocenos {
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: auto;
-    width: fit-content;
-    font-family: 'Source Sans Pro', sans-serif;
-}
-
-.brasseroEs {
-    text-align: center;
-    font-size: 25px;
-    margin-bottom: 10px;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 16px;
-}
-
-.tituloConoce {
-    font-family: 'Source Sans Pro', sans-serif;
-    text-align: center;
-    line-height: normal;
-    border: solid 1px;
-    background-color: #BF2626;
-    color: #ffffff;
     font-size: 24px;
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 10px;
 }
 
-.flex-nosotros {
-    text-align: center;
-    padding: 50px;
-    border: 3px solid;
-    border-radius: 50px;
-    background-color: #fcefe4;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    font-size: 22px;
-    font-family: 'Source Sans Pro', sans-serif;
-}
-
-.menuBrassero {
-    width: 500px;
-    background-color: antiquewhite;
-    padding: 30px;
-    margin: auto;
-    border-radius: 50px;
-    border-color: #BF2626;
-    border-style: solid;
-    font-family: 'Source Sans Pro', sans-serif;
-    text-align: center;
-    margin-top: 20px;
-}
-
-.menuItem {
-    margin-bottom: 1rem;
-}
-
-.menuNombre {
-    font-size: 17px;
-}
-
-.menuNombre2 {
-    font-size: 14px;
-}
-
-.menuPrecio {
-    color: red;
-}
-
-.menuTitulo {
-    font-family: 'Source Sans Pro', sans-serif;
-    text-align: center;
-    line-height: normal;
-    border: solid 1px;
-    background-color: #BF2626;
-    color: #ffffff;
-    font-size: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-}
-
-.tituloGaleria {
-    font-family: 'Hind', sans-serif;
-    text-align: center;
-    line-height: normal;
-    border: solid 1px;
-    background-color: #BF2626;
-    color: #ffffff;
-    font-size: 24px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-}
-
-.galeria {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    border-top: 10px solid antiquewhite;
-    border-bottom: 10px solid antiquewhite;
-    width: 500px;
-    background-color: antiquewhite;
-    padding: 20px;
-    margin: auto;
-    border-radius: 50px;
-    border-color: #BF2626;
-    border-style: solid;
-    font-family: 'Source Sans Pro', sans-serif;
-    text-align: center;
-    margin-top: 10px;
-}
-
-.galeria div {
-    margin-bottom: 20px;
-    margin-top: 10px;
-    border-left: 3px solid black;
-    border-right: 3px solid black;
-    border-bottom: none;
-    border-top: 3px solid black;
-    background-color: #000000;
+.noticiaUno {
+    text-align: justify;
 }
 
 .fondoMain {
@@ -327,17 +101,16 @@ label {
 }
 
 .multimedia {
-    grid-area: multimedia;
     text-align: center;
 }
 
 .conoce {
     color: white;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 17px;
+    font-size: 25px;
     text-align: center;  
     background-color: #BF2626;
-    border-radius: 45px;
+    border-radius: 20px;
     margin-bottom: 21px;
     margin-top: 8px;
 }
@@ -345,18 +118,215 @@ label {
 .recomendaciones {
     font-family: 'Source Sans Pro', sans-serif;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
     text-align: center;
+    margin-bottom: 60px;
 }
 
 .videos {
     text-decoration: none;
     color: #000000;
+    
 }
 
 .imagenCarne {
     border: 2px solid black;
+}
+
+.logotipo:hover {
+    transform: rotate(360deg);
+    transition: all .3s;
+}
+
+.copyright {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.copy {
+    display: flex;
+    flex-direction: column;
+    
+    list-style: none;
+}
+
+.footer {
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.suscribete {
+    grid-area: suscribete;
+    text-align: center;
+}
+
+.entrada {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 10px;
+}
+
+label {
+    display: inline-block;
+    width: 60px;
+}
+
+.boton {
+    font-size:10px;
+    color:white;
+    background:#3d97f1;
+    border: 0px;
+    width: 80px;
+    height: 20px;
+    margin-top: 10px;
+}
+
+.fondoMenu {
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.menuBrassero {
+    width: 700px;
+    background-color: antiquewhite;
+    padding: 30px;
+    margin: auto;
+    border-radius: 20px;
+    border-color: #BF2626;
+    border-style: solid;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.menuItem {
+    margin-bottom: 1rem;
+}
+
+.menuNombre {
+    font-size: 17px;
+}
+
+.menuNombre2 {
+    font-size: 14px;
+}
+
+.menuPrecio {
+    color: red;
+}
+
+.tituloMenu {
+    font-family: 'Hind', sans-serif;
+    text-align: center;
+    line-height: normal;
+    border: solid 1px;
+    background-color: #BF2626;
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.tituloGaleria {
+    font-family: 'Hind', sans-serif;
+    text-align: center;
+    line-height: normal;
+    border: solid 1px;
+    background-color: #BF2626;
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.galeria {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-top: 10px solid antiquewhite;
+    border-bottom: 10px solid antiquewhite;
+    width: 1000px;
+    background-color: antiquewhite;
+    padding: 20px;
+    margin: auto;
+    border-radius: 20px;
+    border-color: #BF2626;
+    border-style: solid;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.galeria div {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    border-bottom: none;
+    border-top: 3px solid black;
+    background-color: #000000;
+}
+
+.photo:hover {
+    border: 4px solid black;
+    transform: rotate(-3deg);
+}
+
+.fondoGaleria {
+    background-image: url("../images/fondoGaleria.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.tituloConoce {
+    font-family: 'Hind', sans-serif;
+    text-align: center;
+    line-height: normal;
+    border: solid 1px;
+    background-color: #BF2626;
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.conocenos {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.brasseroEs {
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 25px;
+    color: #ffffff;
+    text-shadow: 2px 2px #000000;
+}
+
+.flex-nosotros {
+    text-align: center;
+    width: 1100px;
+    padding: 50px;
+    margin-top: 50px;
+    border: 3px solid;
+    border-radius: 20px;
+    background-color: #fcefe4;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 22px;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .contactoBrassero {
@@ -373,14 +343,15 @@ label {
 }
 
 .formulario1 {
-    width: 400px;
+    width: 700px;
     background-color: antiquewhite;
     padding: 25px;
     margin: auto;
-    border-radius: 30px;
+    border-radius: 20px;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 17px;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .entrada1 {
@@ -403,862 +374,218 @@ label {
     width: auto;
 }
 
-.photo:hover {
-    border: 4px solid black;
-    transform: rotate(-3deg);
+.tituloContacto {
+    font-family: 'Hind', sans-serif;
+    text-align: center;
+    line-height: normal;
+    border: solid 1px;
+    background-color: #BF2626;
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
-.logotipo:hover {
-    transform: rotate(360deg);
-    transition: all .3s;
+.fondoGaleria {
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
-
-/*Mobile*/
-.container {
-    display: grid;
-    gap: 10px;
-    grid-template:
-    "header"      40px
-    "logo"        70px    
-    "main"        auto
-    "noticia"     auto
-    "publicidad"  auto
-    "suscribete"  auto
-    "footer"      70px
-    "redes"       70px
-    "copyright"   30px;
+.fondoNosotros {
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
+
+.flex-nosotros {
+    text-align: center;
+    padding: 50px;
+    border: 3px solid;
+    margin: auto;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: 22px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
 
 /*Tablet*/
-@media (min-width:600px ) {
-
-    .container {
-        grid-template-columns: 200px auto;
-        grid-template-rows:100px 50px auto 100px;
-
-        grid-template:
-        "logo header" 100px
-        "noticia main" auto
-        "suscribete publicidad" auto
-        "redes footer" 100px 
-        "copyright copyright" 50px / 
-        150px auto;
-        }
-
-        .redes {
-            grid-area: redes;
-            margin-top: auto;
-            margin-bottom: auto;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-evenly; 
-        }
-
-        header label {
-            display: none;
-        }
+@media (max-width:991px ) {
+    .recomendaciones {
+        font-family: 'Source Sans Pro', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+        margin-bottom: 60px;
+    }
     
-        .menu li:hover {
-            background: rgba(0,0,0,0.3);
-            border-radius: 15px;
-        }
+    .menuBrassero {
+        width: 500px;
+        background-color: antiquewhite;
+        padding: 30px;
+        margin: auto;
+        border-radius: 20px;
+        border-color: #BF2626;
+        border-style: solid;
+        font-family: 'Source Sans Pro', sans-serif;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .galeria {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        border-top: 10px solid antiquewhite;
+        border-bottom: 10px solid antiquewhite;
+        width: 700px;
+        background-color: antiquewhite;
+        padding: 20px;
+        margin: auto;
+        border-radius: 20px;
+        border-color: #BF2626;
+        border-style: solid;
+        font-family: 'Source Sans Pro', sans-serif;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
     
-        .menu ul {
-            font-family: 'Source Sans Pro', sans-serif;
-            font-size: 20px;
-            margin-top: 28px; 
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: row;
-            justify-content: space-around;
-        }
+    .galeria div {
+        margin-bottom: 20px;
+        margin-top: 10px;
+        border-left: 3px solid black;
+        border-right: 3px solid black;
+        border-bottom: none;
+        border-top: 3px solid black;
+        background-color: #000000;
+    }
+
+    .brasseroEs {
+        text-align: center;
+        margin-bottom: 10px;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 25px;
+        color: #ffffff;
+        text-shadow: 2px 2px #000000;
+    }
     
-        .menu li {
-            flex-grow: 1;
-            text-align: center;
-            flex-direction: row;
-            
-        }
-    
-        .menu {
-            position: relative;
-            margin-left: 0%;
-        }
-    
-        #btn-menu:checked ~ .menu {
-            margin: 0;
-        }
-    
-        #btn-menu:checked ~ .menu {
-            margin: 0;
-        }
+    .flex-nosotros {
+        text-align: center;
+        width: 700px;
+        padding: 50px;
+        margin-top: 50px;
+        border: 3px solid;
+        border-radius: 20px;
+        background-color: #fcefe4;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        font-size: 22px;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
 
-        .noticia {
-            grid-area: noticia;
-            font-family: 'Source Sans Pro', sans-serif;
-            font-size: 12px;
-            line-height: 23px;
-            text-align: left;
-            margin-left: 10px;
-            margin-right: 10px;
-        }
-        
-        .imageNews {
-            margin-bottom: auto;
-            margin-left: auto;
-            margin-right: auto;
-            width: fit-content;
-        }
-        
-        .imagenNoticia {
-            max-width: 100%;
-        }
-        
-        .tituloNoticia {
-            font-family: 'Hind', sans-serif;
-            text-align: center;
-            line-height: normal;
-            border: solid 1px;
-            background-color: #BF2626;
-            color: #ffffff;
-            font-size: 24px;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            border-radius: 10px;
-        }
-
-        .noticiaUno {
-            text-align: justify;
-        }
-
-        .publicidad {
-            grid-area: publicidad;
-            text-align: center;
-            width: 100%;
-            
-        }
-
-        .suscribete {
-            grid-area: suscribete;
-            text-align: center;
-            font-family: 'Source Sans Pro', sans-serif;
-            font-size: 13px;
-            margin-top: 10px;
-        }
-        
-        .entrada {
-            font-family: 'Source Sans Pro', sans-serif;
-            font-size: 10px;
-        }
-        
-        label {
-            display: inline-block;
-            width: 60px;
-        }
-        
-        .boton {
-            font-size:10px;
-            color:white;
-            background:#3d97f1;
-            border: 0px;
-            width: 80px;
-            height: 20px;
-            margin-top: 10px;
-        }
-
-        .copyright {
-            grid-area: copyright;
-        }
-
-        .copy {
-            font-family: 'Source Sans Pro', sans-serif;
-            text-align: center;
-            font-size: 13px;
-            margin-top: 5px;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            list-style: none;   
-        }
-
-        .conocenos {
-            margin-top: auto;
-            margin-bottom: auto;
-            margin-left: auto;
-            margin-right: auto;
-            width: fit-content;
-            font-family: 'Source Sans Pro', sans-serif;
-        }
-        
-        .brasseroEs {
-            text-align: center;
-            font-size: 25px;
-            margin-bottom: 10px;
-            font-family: 'Source Sans Pro', sans-serif;
-            font-size: 16px;
-        }
-        
-        .tituloConoce {
-            font-family: 'Source Sans Pro', sans-serif;
-            text-align: center;
-            line-height: normal;
-            border: solid 1px;
-            background-color: #BF2626;
-            color: #ffffff;
-            font-size: 24px;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            border-radius: 10px;
-        }
-        
-        .flex-nosotros {
-            text-align: center;
-            padding: 50px;
-            margin-top: 30px;
-            border: 3px solid;
-            border-radius: 50px;
-            background-color: #fcefe4;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            font-size: 22px;
-            font-family: 'Source Sans Pro', sans-serif;
-        }
-
-        .menuBrassero {
-            width: 200px;
-            background-color: antiquewhite;
-            padding: 200px;
-            margin: auto;
-            border-radius: 50px;
-            border-color: #BF2626;
-            border-style: solid;
-            font-family: 'Source Sans Pro', sans-serif;
-            text-align: center;
-            margin-top: 20px;
-        }
-        
-        .menuItem {
-            margin-bottom: 1rem;
-        }
-        
-        .menuNombre {
-            font-size: 17px;
-        }
-        
-        .menuNombre2 {
-            font-size: 14px;
-        }
-        
-        .menuPrecio {
-            color: red;
-        }
-        
-        .menuTitulo {
-            font-size: 60px;
-        }
-
-        .menuBrassero {
-            width: 600px;
-            background-color: antiquewhite;
-            padding: 30px;
-            margin: auto;
-            border-radius: 50px;
-            border-color: #BF2626;
-            border-style: solid;
-            font-family: 'Source Sans Pro', sans-serif;
-            text-align: center;
-            margin-top: 20px;
-        }
-        
-        .menuItem {
-            margin-bottom: 1rem;
-        }
-        
-        .menuNombre {
-            font-size: 17px;
-        }
-        
-        .menuNombre2 {
-            font-size: 14px;
-        }
-        
-        .menuPrecio {
-            color: red;
-        }
-        
-        .menuTitulo {
-                font-family: 'Source Sans Pro', sans-serif;
-                text-align: center;
-                line-height: normal;
-                border: solid 1px;
-                background-color: #BF2626;
-                color: #ffffff;
-                font-size: 20px;
-                margin-top: 10px;
-                margin-bottom: 10px;
-                border-radius: 10px;
-            }
-
-        .tituloGaleria {
-            font-family: 'Hind', sans-serif;
-            text-align: center;
-            line-height: normal;
-            border: solid 1px;
-            background-color: #BF2626;
-            color: #ffffff;
-            font-size: 24px;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            border-radius: 10px;
-        }
-            
-        .galeria {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-            border-top: 10px solid antiquewhite;
-            border-bottom: 10px solid antiquewhite;
-            width: 700px;
-            background-color: antiquewhite;
-            padding: 30px;
-            margin: auto;
-            border-radius: 50px;
-            border-color: #BF2626;
-            border-style: solid;
-            font-family: 'Source Sans Pro', sans-serif;
-            text-align: center;
-            margin-top: 20px;
-        }
-            
-        .galeria div {
-            margin-bottom: 3px;
-            margin-top: 20px;
-            border-left: 4px solid black;
-            border-right: 4px solid black;
-            border-bottom: auto  solid black;
-            border-radius: 8px;
-            border-top: 4px solid black;
-            background-color: #000000;
-        }
-
-        .fondoMain {
-            background-image: url("../images/fondo.jpg");
-            background-repeat: no-repeat;
-            background-position: 80%;
-        }
-
-        .fondoMain:hover {
-            background-image: url("../images/fondo1.jpg");
-            background-repeat: no-repeat;
-            background-position: 80%;
-            transition: all 2s;
-        }
-
-        .titulo {
-            color: #ffffff;
-            font-family: 'Hind', sans-serif;
-            font-size: 70px;
-            text-align: center;
-            text-shadow: 3px 3px #000000;
-        }
-        
-        .logotipo {
-            margin-top: auto;
-            margin-bottom: auto;
-            margin-left: auto;
-            margin-right: auto;
-            width: fit-content;
-        }
-        
-        .titulo2 {
-            font-family: 'Hind', sans-serif;
-            color: #ffffff;
-            font-size: 30px;
-            text-align: center;
-            text-shadow: 2px 2px #000000;
-        }
-        
-        .multimedia {
-            grid-area: multimedia;
-            text-align: center;
-        }
-
-        .conoce {
-            color: white;
-            font-family: 'Source Sans Pro', sans-serif;
-            font-size: 25px;
-            text-align: center;  
-            background-color: #BF2626;
-            border-radius: 45px;
-            margin-bottom: 21px;
-            margin-top: 8px;
-        }
-        
-        .recomendaciones {
-            font-family: 'Source Sans Pro', sans-serif;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            text-align: center;
-        }
-
-        .videos {
-            text-decoration: none;
-            color: #000000;
-            
-        }
-
-        .imagenCarne {
-            border: 2px solid black;
-        }
-
-        .contactoBrassero {
-            font-family: 'Hind', sans-serif;
-            text-align: center;
-            line-height: normal;
-            border: solid 1px;
-            background-color: #BF2626;
-            color: #ffffff;
-            font-size: 24px;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            border-radius: 10px;
-        }
-        
-        .formulario1 {
-            width: 700px;
-            background-color: antiquewhite;
-            padding: 25px;
-            margin: auto;
-            border-radius: 30px;
-            font-family: 'Source Sans Pro', sans-serif;
-            font-size: 17px;
-            text-align: center;
-        }
-        
-        .entrada1 {
-            width: 50%;
-            padding: 10px;
-            font-family: 'Source Sans Pro', sans-serif;
-            border: none;
-            outline: none;
-        }
-        
-        .areatexto1 {
-            width: 50%;
-            padding: 10px;
-            font-family: 'Source Sans Pro', sans-serif;
-            border: none;
-            outline: none;
-        }
-
-        .formulario1 label {
-            width: auto;
-        }
-
-        .photo:hover {
-            border: 4px solid black;
-            transform: rotate(-3deg);
-        }
-        
-        .logotipo:hover {
-            transform: rotate(360deg);
-            transition: all .3s;
-        }
+    .formulario1 {
+        width: 500px;
+        background-color: antiquewhite;
+        padding: 25px;
+        margin: auto;
+        border-radius: 20px;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 17px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
 
 }
 
-/*Desktop*/
-@media (min-width:1000px ) {
+/*Mobile*/
+@media (max-width:600px ) {
+    .menuBrassero {
+        width: 250px;
+        background-color: antiquewhite;
+        padding: 30px;
+        margin: auto;
+        border-radius: 20px;
+        border-color: #BF2626;
+        border-style: solid;
+        font-family: 'Source Sans Pro', sans-serif;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .galeria {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        border-top: 10px solid antiquewhite;
+        border-bottom: 10px solid antiquewhite;
+        width: 250px;
+        background-color: antiquewhite;
+        padding: 20px;
+        margin: auto;
+        border-radius: 20px;
+        border-color: #BF2626;
+        border-style: solid;
+        font-family: 'Source Sans Pro', sans-serif;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    
+    .galeria div {
+        margin-bottom: 20px;
+        margin-top: 10px;
+        border-left: 3px solid black;
+        border-right: 3px solid black;
+        border-bottom: none;
+        border-top: 3px solid black;
+        background-color: #000000;
+    }
 
-    .container {
-        grid-template:
-        "logo header redes" 100px
-        "noticia main publicidad" auto
-        "suscribete footer copyright" 100px / 
-        200px auto 200px;
-        }
+    .brasseroEs {
+        text-align: center;
+        margin-bottom: 10px;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 25px;
+        color: #ffffff;
+        text-shadow: 2px 2px #000000;
+    }
+    
+    .flex-nosotros {
+        text-align: center;
+        width: 318px;
+        padding: 10px;
+        margin-top: 50px;
+        border: 3px solid;
+        border-radius: 20px;
+        background-color: #fcefe4;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        font-size: 22px;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
 
-        .redes {
-            grid-area: redes;
-            margin-top: auto;
-            margin-bottom: auto;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-evenly; 
-        }
-
-        .noticia {
-            grid-area: noticia;
-            font-family: 'Source Sans Pro', sans-serif;
-            font-size: 15px;
-            line-height: 23px;
-            text-align: left;
-            margin-left: 10px;
-            margin-right: 10px;
-        }
-        
-        .imageNews {
-            margin-bottom: auto;
-            margin-left: auto;
-            margin-right: auto;
-            width: fit-content;
-        }
-        
-        .imagenNoticia {
-            max-width: 100%;
-        }
-        
-        .tituloNoticia {
-            font-family: 'Hind', sans-serif;
-            text-align: center;
-            line-height: normal;
-            border: solid 1px;
-            background-color: #BF2626;
-            color: #ffffff;
-            font-size: 24px;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            border-radius: 10px;
-        }
-
-        .noticiaUno {
-            text-align: justify;
-        }
-
-        .suscribete {
-            grid-area: suscribete;
-            font-family: 'Source Sans Pro', sans-serif;
-            font-size: 14px;
-        }
-
-        .formulario {
-            padding: 5px;
-            margin: auto;
-            font-family: 'Source Sans Pro', sans-serif;
-            color: black;
-        }
-        
-        .entrada {
-            font-family: 'Source Sans Pro', sans-serif;
-            font-size: 10px;
-        }
-        
-        .boton {
-            font-size:10px;
-            color:white;
-            background:#3d97f1;
-            border: 0px;
-            width: 80px;
-            height: 20px;
-            margin-top: 10px;
-        }
-
-        .copyright {
-            grid-area: copyright;
-            font-family: 'Source Sans Pro', sans-serif;
-            text-align: center;
-            font-size: 13px;
-            margin-top: 5px;
-        }
-        
-        .copy {
-            display: flex;
-            flex-direction: column;
-            
-            list-style: none;
-        }
-
-        .conocenos {
-            margin-top: auto;
-            margin-bottom: auto;
-            margin-left: auto;
-            margin-right: auto;
-            width: fit-content;
-            font-family: 'Source Sans Pro', sans-serif;
-        }
-        
-        .brasseroEs {
-            text-align: center;
-            font-size: 25px;
-            margin-bottom: 10px;
-            font-family: 'Source Sans Pro', sans-serif;
-            font-size: 16px;
-        }
-        
-        .tituloConoce {
-            font-family: 'Source Sans Pro', sans-serif;
-            text-align: center;
-            line-height: normal;
-            border: solid 1px;
-            background-color: #BF2626;
-            color: #ffffff;
-            font-size: 24px;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            border-radius: 10px;
-        }
-        
-        .flex-nosotros {
-            text-align: center;
-            padding: 50px;
-            margin-top: 80px;
-            border: 3px solid;
-            border-radius: 50px;
-            background-color: #fcefe4;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            font-size: 22px;
-            font-family: 'Source Sans Pro', sans-serif;
-        }
-
-        .menuBrassero {
-            width: 800px;
-            background-color: antiquewhite;
-            padding: 30px;
-            margin: auto;
-            border-radius: 50px;
-            border-color: #BF2626;
-            border-style: solid;
-            font-family: 'Source Sans Pro', sans-serif;
-            text-align: center;
-            margin-top: 20px;
-        }
-        
-        .menuItem {
-            margin-bottom: 1rem;
-        }
-        
-        .menuNombre {
-            font-size: 17px;
-        }
-        
-        .menuNombre2 {
-            font-size: 14px;
-        }
-        
-        .menuPrecio {
-            color: red;
-        }
-        
-        .menuTitulo {
-            font-size: 60px;
-        }
-
-        .menuBrassero {
-            width: 800px;
-            background-color: antiquewhite;
-            padding: 30px;
-            margin: auto;
-            border-radius: 50px;
-            border-color: #BF2626;
-            border-style: solid;
-            font-family: 'Source Sans Pro', sans-serif;
-            text-align: center;
-            margin-top: 20px;
-        }
-        
-        .menuItem {
-            margin-bottom: 1rem;
-        }
-        
-        .menuNombre {
-            font-size: 17px;
-        }
-        
-        .menuNombre2 {
-            font-size: 14px;
-        }
-        
-        .menuPrecio {
-            color: red;
-        }
-        
-        .menuTitulo {
-                font-family: 'Source Sans Pro', sans-serif;
-                text-align: center;
-                line-height: normal;
-                border: solid 1px;
-                background-color: #BF2626;
-                color: #ffffff;
-                font-size: 20px;
-                margin-top: 10px;
-                margin-bottom: 10px;
-                border-radius: 10px;
-            }
-
-        .tituloGaleria {
-            font-family: 'Hind', sans-serif;
-            text-align: center;
-            line-height: normal;
-            border: solid 1px;
-            background-color: #BF2626;
-            color: #ffffff;
-            font-size: 24px;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            border-radius: 10px;
-        }
-            
-        .galeria {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-            border-top: 10px solid antiquewhite;
-            border-bottom: 10px solid antiquewhite;
-            width: 800px;
-            background-color: antiquewhite;
-            padding: 30px;
-            margin: auto;
-            border-radius: 50px;
-            border-color: #BF2626;
-            border-style: solid;
-            font-family: 'Source Sans Pro', sans-serif;
-            text-align: center;
-            margin-top: 20px;
-        }
-            
-        .galeria div {
-            margin-bottom: 3px;
-            margin-top: 20px;
-            border-left: 5px solid black;
-            border-right: 5px solid black;
-            border-bottom: auto  solid black;
-            border-radius: 8px;
-            border-top: 5px solid black;
-            background-color: #000000;
-        }
-
-        .fondoMain {
-            background-image: url("../images/fondo.jpg");
-            background-repeat: no-repeat;
-            background-position: 80%;
-        }
-        
-        .fondoMain:hover {
-            background-image: url("../images/fondo1.jpg");
-            background-repeat: no-repeat;
-            background-position: 80%;
-            transition: all 2s;
-        }
-
-        .titulo {
-            color: #ffffff;
-            font-family: 'Hind', sans-serif;
-            font-size: 70px;
-            text-align: center;
-            text-shadow: 3px 3px #000000;
-        }
-        
-        .logotipo {
-            margin-top: auto;
-            margin-bottom: auto;
-            margin-left: auto;
-            margin-right: auto;
-            width: fit-content;
-        }
-        
-        .titulo2 {
-            font-family: 'Hind', sans-serif;
-            color: #ffffff;
-            font-size: 30px;
-            text-align: center;
-            text-shadow: 2px 2px #000000;
-        }
-        
-        .multimedia {
-            grid-area: multimedia;
-            text-align: center;
-        }
-
-        .conoce {
-            color: white;
-            font-family: 'Source Sans Pro', sans-serif;
-            font-size: 25px;
-            text-align: center;  
-            background-color: #BF2626;
-            border-radius: 45px;
-            margin-bottom: 21px;
-            margin-top: 8px;
-        }
-        
-        .recomendaciones {
-            font-family: 'Source Sans Pro', sans-serif;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            text-align: center;
-        }
-
-        .videos {
-            text-decoration: none;
-            color: #000000;
-            
-        }
-
-        .imagenCarne {
-            border: 2px solid black;
-        }
-
-        .contactoBrassero {
-            font-family: 'Hind', sans-serif;
-            text-align: center;
-            line-height: normal;
-            border: solid 1px;
-            background-color: #BF2626;
-            color: #ffffff;
-            font-size: 24px;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            border-radius: 10px;
-        }
-        
-        .formulario1 {
-            width: 700px;
-            background-color: antiquewhite;
-            padding: 25px;
-            margin: auto;
-            border-radius: 30px;
-            font-family: 'Source Sans Pro', sans-serif;
-            font-size: 17px;
-            text-align: center;
-        }
-        
-        .entrada1 {
-            width: 50%;
-            padding: 10px;
-            font-family: 'Source Sans Pro', sans-serif;
-            border: none;
-            outline: none;
-        }
-        
-        .areatexto1 {
-            width: 50%;
-            padding: 10px;
-            font-family: 'Source Sans Pro', sans-serif;
-            border: none;
-            outline: none;
-        }
-
-        .formulario1 label {
-            width: auto;
-        }
-
-        .photo:hover {
-            border: 4px solid black;
-            transform: rotate(-3deg);
-        }
-        
-        .logotipo:hover {
-            transform: rotate(360deg);
-            transition: all .3s;
-        }
-
+    .formulario1 {
+        width: 300px;
+        background-color: antiquewhite;
+        padding: 25px;
+        margin: auto;
+        border-radius: 20px;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 17px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
 }
