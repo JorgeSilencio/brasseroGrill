@@ -12,25 +12,112 @@ font-family: 'Source Sans Pro', sans-serif;
     box-sizing: border-box;
 }
 
-.row {
-    text-align: center;
-    align-items: center;
-    align-items: center;
+/*Mobile*/
+.layoutIndex {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 8fr;
+    grid-template-areas:
+    "header"
+    "principal"
+    "noticia"
+    "boletin"
+    "redes"
+    "footer";
 }
 
-.redes {
-    margin-top: 35px;
-    margin-bottom: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly; 
+.layoutSecciones {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 8fr;
+    grid-template-areas:
+    "header"
+    "principal"
+    "boletin"
+    "redes"
+    "footer";
 }
 
+/*Tablet*/
+@media (min-width:750px) {
+    .layoutIndex {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 3fr 7fr 3fr;
+        grid-template-rows: 1fr 10fr 1fr;
+        grid-template-areas:
+        "header header redes"
+        "noticia principal principal"
+        "boletin footer footer";
+        }
+    }
+
+@media (min-width:750px) {
+    .layoutSecciones {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 3fr 7fr 3fr;
+        grid-template-rows: 1fr 10fr 1fr;
+        grid-template-areas:
+        "header header redes"
+        "principal principal principal"
+        "boletin footer footer";
+        }
+    }
+
+    /*Desktop*/
+@media (min-width:1043px) {
+    .layoutIndex {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 2fr 10fr 2fr;
+        grid-template-rows: 1fr 10fr 1fr;
+        grid-template-areas:
+        "header header header"
+        "noticia principal principal"
+        "boletin footer redes";
+        }
+
+                .header {
+            grid-area: header;
+            text-align: center;
+            margin: auto;
+            font-family: 'Hind', sans-serif;
+        }
+    }
+
+@media (min-width:1043px) {
+    .layoutSecciones {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 2fr 10fr 2fr;
+        grid-template-rows: 1fr 10fr 1fr;
+        grid-template-areas:
+        "header header header"
+        "principal principal principal"
+        "boletin footer redes";
+        }
+
+        .header {
+            grid-area: header;
+            text-align: center;
+            margin: auto;
+            font-family: 'Hind', sans-serif;
+        }
+    }
+
+/*Header*/
+.header {
+    grid-area: header;
+    font-family: 'Hind', sans-serif;
+}
+
+/*Noticia*/
 .noticia {
+    grid-area: noticia;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 15px;
     line-height: 23px;
-    text-align: left;
+    text-align: justify;
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -40,10 +127,6 @@ font-family: 'Source Sans Pro', sans-serif;
     margin-left: auto;
     margin-right: auto;
     width: fit-content;
-}
-
-.imagenNoticia {
-    max-width: 100%;
 }
 
 .tituloNoticia {
@@ -59,8 +142,11 @@ font-family: 'Source Sans Pro', sans-serif;
     border-radius: 10px;
 }
 
-.noticiaUno {
-    text-align: justify;
+
+/*Principal*/
+.principal {
+    grid-area: principal;
+    background-color: rgb(252, 183, 105);
 }
 
 .fondoMain {
@@ -76,16 +162,20 @@ font-family: 'Source Sans Pro', sans-serif;
     transition: all 2s;
 }
 
+.logotipo:hover {
+    transform: rotate(360deg);
+    transition: all .3s;
+}
+
 .titulo {
     color: #ffffff;
     font-family: 'Hind', sans-serif;
-    font-size: 70px;
+    font-size: 75px;
     text-align: center;
     text-shadow: 3px 3px #000000;
 }
 
 .logotipo {
-    margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
@@ -101,6 +191,7 @@ font-family: 'Source Sans Pro', sans-serif;
 }
 
 .multimedia {
+    grid-area: multimedia;
     text-align: center;
 }
 
@@ -110,9 +201,7 @@ font-family: 'Source Sans Pro', sans-serif;
     font-size: 25px;
     text-align: center;  
     background-color: #BF2626;
-    border-radius: 20px;
     margin-bottom: 21px;
-    margin-top: 8px;
 }
 
 .recomendaciones {
@@ -121,49 +210,29 @@ font-family: 'Source Sans Pro', sans-serif;
     flex-direction: row;
     justify-content: space-around;
     text-align: center;
-    margin-bottom: 60px;
 }
 
-.videos {
-    text-decoration: none;
-    color: #000000;
-    
-}
-
-.imagenCarne {
-    border: 2px solid black;
-}
-
-.logotipo:hover {
-    transform: rotate(360deg);
-    transition: all .3s;
-}
-
-.copyright {
+@media (max-width:1150px) {
+.recomendaciones {
     font-family: 'Source Sans Pro', sans-serif;
-    text-align: center;
-    font-size: 13px;
-    margin-top: 5px;
-}
-
-.copy {
     display: flex;
     flex-direction: column;
-    
-    list-style: none;
+    justify-content: space-around;
+    text-align: center;
+}
 }
 
-.footer {
+/*Suscríbete*/
+.boletin {
+    grid-area: boletin;
     text-align: center;
+}
+
+.formulario {
+    padding: 5px;
+    margin: auto;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 15px;
-    margin-bottom: 10px;
-    margin-top: 20px;
-}
-
-.suscribete {
-    grid-area: suscribete;
-    text-align: center;
+    color: black;
 }
 
 .entrada {
@@ -186,10 +255,49 @@ label {
     margin-top: 10px;
 }
 
-.fondoMenu {
-    background-image: url("../images/background.jpg");
+.suscribe span {
+    color: red;
+}
+
+
+/*Footer*/
+.footer {
+    grid-area: footer;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    font-size: 13px;
+    margin-top: 5px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/*Redes*/
+.redes {
+    grid-area: redes;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/*Fondo Secciones*/
+.fondoSecciones {
+    background-image: url("../images/fondoSecciones.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+/*Sección menú*/
+.tituloMenu {
+    font-family: 'Hind', sans-serif;
+    text-align: center;
+    line-height: normal;
+    border: solid 1px;
+    background-color: #BF2626;
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
 .menuBrassero {
@@ -221,89 +329,37 @@ label {
     color: red;
 }
 
-.tituloMenu {
-    font-family: 'Hind', sans-serif;
-    text-align: center;
-    line-height: normal;
-    border: solid 1px;
-    background-color: #BF2626;
-    color: #ffffff;
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.tituloGaleria {
-    font-family: 'Hind', sans-serif;
-    text-align: center;
-    line-height: normal;
-    border: solid 1px;
-    background-color: #BF2626;
-    color: #ffffff;
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.galeria {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    border-top: 10px solid antiquewhite;
-    border-bottom: 10px solid antiquewhite;
-    width: 1000px;
+@media (max-width:1150px) {
+.menuBrassero {
+    width: 500px;
     background-color: antiquewhite;
-    padding: 20px;
+    padding: 30px;
     margin: auto;
     border-radius: 20px;
     border-color: #BF2626;
     border-style: solid;
     font-family: 'Source Sans Pro', sans-serif;
     text-align: center;
-    margin-top: 10px;
     margin-bottom: 20px;
 }
-
-.galeria div {
-    margin-bottom: 20px;
-    margin-top: 10px;
-    border-left: 3px solid black;
-    border-right: 3px solid black;
-    border-bottom: none;
-    border-top: 3px solid black;
-    background-color: #000000;
 }
 
-.photo:hover {
-    border: 4px solid black;
-    transform: rotate(-3deg);
+@media (max-width:700px) {
+    .menuBrassero {
+        width: 350px;
+        background-color: antiquewhite;
+        padding: 30px;
+        margin: auto;
+        border-radius: 20px;
+        border-color: #BF2626;
+        border-style: solid;
+        font-family: 'Source Sans Pro', sans-serif;
+        text-align: center;
+        margin-bottom: 20px;
+    }
 }
 
-.fondoGaleria {
-    background-image: url("../images/fondoGaleria.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-.tituloConoce {
-    font-family: 'Hind', sans-serif;
-    text-align: center;
-    line-height: normal;
-    border: solid 1px;
-    background-color: #BF2626;
-    color: #ffffff;
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.conocenos {
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: auto;
-    width: fit-content;
-    font-family: 'Source Sans Pro', sans-serif;
-}
-
+/*Sección Nosotros*/
 .brasseroEs {
     text-align: center;
     margin-bottom: 10px;
@@ -313,24 +369,8 @@ label {
     text-shadow: 2px 2px #000000;
 }
 
-.flex-nosotros {
-    text-align: center;
-    width: 1100px;
-    padding: 50px;
-    margin-top: 50px;
-    border: 3px solid;
-    border-radius: 20px;
-    background-color: #fcefe4;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    font-size: 22px;
+.tituloConoce {
     font-family: 'Source Sans Pro', sans-serif;
-}
-
-.contactoBrassero {
-    font-family: 'Hind', sans-serif;
     text-align: center;
     line-height: normal;
     border: solid 1px;
@@ -342,63 +382,9 @@ label {
     border-radius: 10px;
 }
 
-.formulario1 {
-    width: 700px;
-    background-color: antiquewhite;
-    padding: 25px;
-    margin: auto;
-    border-radius: 20px;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 17px;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.entrada1 {
-    width: 50%;
-    padding: 10px;
-    font-family: 'Source Sans Pro', sans-serif;
-    border: none;
-    outline: none;
-}
-
-.areatexto1 {
-    width: 50%;
-    padding: 10px;
-    font-family: 'Source Sans Pro', sans-serif;
-    border: none;
-    outline: none;
-}
-
-.formulario1 label {
-    width: auto;
-}
-
-.tituloContacto {
-    font-family: 'Hind', sans-serif;
-    text-align: center;
-    line-height: normal;
-    border: solid 1px;
-    background-color: #BF2626;
-    color: #ffffff;
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.fondoGaleria {
-    background-image: url("../images/background.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-.fondoNosotros {
-    background-image: url("../images/background.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
 .flex-nosotros {
     text-align: center;
+    width: 1100px;
     padding: 50px;
     border: 3px solid;
     margin: auto;
@@ -413,179 +399,100 @@ label {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-
-/*Tablet*/
-@media (max-width:991px ) {
-    .recomendaciones {
-        font-family: 'Source Sans Pro', sans-serif;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        text-align: center;
-        margin-bottom: 60px;
-    }
-    
-    .menuBrassero {
-        width: 500px;
-        background-color: antiquewhite;
-        padding: 30px;
-        margin: auto;
-        border-radius: 20px;
-        border-color: #BF2626;
-        border-style: solid;
-        font-family: 'Source Sans Pro', sans-serif;
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
-    .galeria {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        border-top: 10px solid antiquewhite;
-        border-bottom: 10px solid antiquewhite;
-        width: 700px;
-        background-color: antiquewhite;
-        padding: 20px;
-        margin: auto;
-        border-radius: 20px;
-        border-color: #BF2626;
-        border-style: solid;
-        font-family: 'Source Sans Pro', sans-serif;
-        text-align: center;
-        margin-top: 10px;
-        margin-bottom: 20px;
-    }
-    
-    .galeria div {
-        margin-bottom: 20px;
-        margin-top: 10px;
-        border-left: 3px solid black;
-        border-right: 3px solid black;
-        border-bottom: none;
-        border-top: 3px solid black;
-        background-color: #000000;
-    }
-
-    .brasseroEs {
-        text-align: center;
-        margin-bottom: 10px;
-        font-family: 'Source Sans Pro', sans-serif;
-        font-size: 25px;
-        color: #ffffff;
-        text-shadow: 2px 2px #000000;
-    }
-    
+@media (max-width:1120px) {
     .flex-nosotros {
         text-align: center;
         width: 700px;
         padding: 50px;
-        margin-top: 50px;
         border: 3px solid;
+        margin: auto;
+        margin-bottom: 30px;
         border-radius: 20px;
-        background-color: #fcefe4;
+        background-color: antiquewhite;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-around;
         font-size: 22px;
         font-family: 'Source Sans Pro', sans-serif;
     }
-
-    .formulario1 {
-        width: 500px;
-        background-color: antiquewhite;
-        padding: 25px;
-        margin: auto;
-        border-radius: 20px;
-        font-family: 'Source Sans Pro', sans-serif;
-        font-size: 17px;
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
 }
 
-/*Mobile*/
-@media (max-width:600px ) {
-    .menuBrassero {
-        width: 250px;
-        background-color: antiquewhite;
-        padding: 30px;
-        margin: auto;
-        border-radius: 20px;
-        border-color: #BF2626;
-        border-style: solid;
-        font-family: 'Source Sans Pro', sans-serif;
-        text-align: center;
-        margin-bottom: 20px;
-    }
-    
-    .galeria {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        border-top: 10px solid antiquewhite;
-        border-bottom: 10px solid antiquewhite;
-        width: 250px;
-        background-color: antiquewhite;
-        padding: 20px;
-        margin: auto;
-        border-radius: 20px;
-        border-color: #BF2626;
-        border-style: solid;
-        font-family: 'Source Sans Pro', sans-serif;
-        text-align: center;
-        margin-top: 10px;
-        margin-bottom: 20px;
-    }
-    
-    .galeria div {
-        margin-bottom: 20px;
-        margin-top: 10px;
-        border-left: 3px solid black;
-        border-right: 3px solid black;
-        border-bottom: none;
-        border-top: 3px solid black;
-        background-color: #000000;
+    @media (max-width:750px) {
+        .flex-nosotros {
+            text-align: center;
+            align-items: center;
+            width: 400px;
+            padding: 50px;
+            border: 3px solid;
+            margin: auto;
+            margin-bottom: 30px;
+            border-radius: 20px;
+            background-color: antiquewhite;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            font-size: 22px;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
     }
 
-    .brasseroEs {
-        text-align: center;
-        margin-bottom: 10px;
-        font-family: 'Source Sans Pro', sans-serif;
-        font-size: 25px;
-        color: #ffffff;
-        text-shadow: 2px 2px #000000;
-    }
-    
-    .flex-nosotros {
-        text-align: center;
-        width: 318px;
-        padding: 10px;
-        margin-top: 50px;
-        border: 3px solid;
-        border-radius: 20px;
-        background-color: #fcefe4;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        font-size: 22px;
-        font-family: 'Source Sans Pro', sans-serif;
-    }
 
-    .formulario1 {
-        width: 300px;
-        background-color: antiquewhite;
-        padding: 25px;
-        margin: auto;
-        border-radius: 20px;
-        font-family: 'Source Sans Pro', sans-serif;
-        font-size: 17px;
-        text-align: center;
-        margin-bottom: 20px;
-    }
+    /*Contacto*/
+
+.formulario1 {
+    width: 500px;
+    background-color: antiquewhite;
+    padding: 25px;
+    margin: auto;
+    border-radius: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.formulario1 label {
+width: auto;
+}
+    
+.tituloContacto {
+    font-family: 'Hind', sans-serif;
+    text-align: center;
+    line-height: normal;
+    border: solid 1px;
+    background-color: #BF2626;
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+
+/*Galeria*/
+
+.container {
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 4px solid black;
+    background-color: #ffffff;
+}
+
+.col-lg-3 {
+    background-color: #ffffff;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.cardGaleria {
+    text-align: center;
+    margin: auto;
+    background-color: rgb(184, 182, 182);
+}
+
+.cardGaleria:hover {
+    border: 2px solid black;
+    transform: rotate(-3deg);
 }
