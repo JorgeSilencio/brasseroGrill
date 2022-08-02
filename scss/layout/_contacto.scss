@@ -1,0 +1,26 @@
+/*Contacto*/
+.formulario1 {
+    width: 500px;
+    background-color: $fondoCuadros;
+    padding: 25px;
+    margin: auto;
+    border-radius: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 20px;
+    label {
+        width: auto;
+        }
+}
+
+.tituloContacto {
+    font-family: 'Hind', sans-serif;
+    text-align: center;
+    line-height: normal;
+    border: solid 1px;
+    background-color: $fondoTitulos;
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 10px;
+}

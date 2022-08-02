@@ -1,0 +1,29 @@
+/*Noticia*/
+.noticia {
+    grid-area: noticia;
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 23px;
+    text-align: justify;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.imageNews {
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+
+.tituloNoticia {
+    font-family: 'Hind', sans-serif;
+    text-align: center;
+    line-height: normal;
+    border: solid 1px;
+    background-color: #BF2626;
+    color: #ffffff;
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}

@@ -1,0 +1,75 @@
+/*Mobile*/
+.layoutIndex {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 8fr;
+    grid-template-areas:
+    "header"
+    "principal"
+    "noticia"
+    "boletin"
+    "redes"
+    "footer";
+}
+
+.layoutSecciones {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 8fr;
+    grid-template-areas:
+    "header"
+    "principal"
+    "boletin"
+    "redes"
+    "footer";
+}
+
+/*Tablet*/
+@media (min-width:750px) {
+    .layoutIndex {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 3fr 7fr 3fr;
+        grid-template-rows: 1fr 10fr 1fr;
+        grid-template-areas:
+        "header header redes"
+        "noticia principal principal"
+        "boletin footer footer";
+        }
+
+        .layoutSecciones {
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 3fr 7fr 3fr;
+            grid-template-rows: 1fr 10fr 1fr;
+            grid-template-areas:
+            "header header redes"
+            "principal principal principal"
+            "boletin footer footer";
+            }
+        }
+
+/*Desktop*/
+@media (min-width:1043px) {
+    .layoutIndex {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 2fr 10fr 2fr;
+        grid-template-rows: 1fr 10fr 1fr;
+        grid-template-areas:
+        "header header header"
+        "noticia principal principal"
+        "boletin footer redes";
+        }
+
+        .layoutSecciones {
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 2fr 10fr 2fr;
+            grid-template-rows: 1fr 10fr 1fr;
+            grid-template-areas:
+            "header header header"
+            "principal principal principal"
+            "boletin footer redes";
+            }
+    }

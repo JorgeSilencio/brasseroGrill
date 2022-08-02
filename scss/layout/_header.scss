@@ -1,0 +1,14 @@
+/*Header*/
+.header {
+    grid-area: header;
+    font-family: 'Hind', sans-serif;
+}
+
+/*Desktop*/
+@media (min-width:1043px) {
+    .header {
+    @extend .header;
+    text-align: center;
+    margin: auto;
+    }
+}

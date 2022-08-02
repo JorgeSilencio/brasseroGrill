@@ -1,0 +1,70 @@
+/*Sección menú*/
+.tituloMenu {
+    font-family: 'Hind', sans-serif;
+    text-align: center;
+    line-height: normal;
+    border: solid 1px;
+    background-color: $fondoTitulos;
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.menuBrassero {
+    width: 700px;
+    background-color: $fondoCuadros;
+    padding: 30px;
+    margin: auto;
+    border-radius: 20px;
+    border-color: $fondoTitulos;
+    border-style: solid;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.menuItem {
+    margin-bottom: 1rem;
+}
+
+.menuNombre {
+    font-size: 17px;
+}
+
+.menuNombre2 {
+    font-size: 14px;
+}
+
+.menuPrecio {
+    color: red;
+}
+
+@media (max-width:1150px) {
+    .menuBrassero {
+        width: 500px;
+        background-color: $fondoCuadros;
+        padding: 30px;
+        margin: auto;
+        border-radius: 20px;
+        border-color: $fondoTitulos;
+        border-style: solid;
+        font-family: 'Source Sans Pro', sans-serif;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+    
+    @media (max-width:700px) {
+        .menuBrassero {
+            width: 350px;
+            background-color: $fondoCuadros;
+            padding: 30px;
+            margin: auto;
+            border-radius: 20px;
+            border-color: $fondoTitulos;
+            border-style: solid;
+            font-family: 'Source Sans Pro', sans-serif;
+            text-align: center;
+            margin-bottom: 20px;
+    }
+}

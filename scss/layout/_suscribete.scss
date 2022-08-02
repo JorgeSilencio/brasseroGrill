@@ -1,0 +1,36 @@
+/*Suscríbete*/
+.boletin {
+    grid-area: boletin;
+    text-align: center;
+}
+
+.formulario {
+    padding: 5px;
+    margin: auto;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: black;
+}
+
+.entrada {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 10px;
+}
+
+label {
+    display: inline-block;
+    width: 60px;
+}
+
+.boton {
+    font-size:10px;
+    color:white;
+    background:#3d97f1;
+    border: 0px;
+    width: 80px;
+    height: 20px;
+    margin-top: 10px;
+}
+
+.suscribe span {
+    color: red;
+}
