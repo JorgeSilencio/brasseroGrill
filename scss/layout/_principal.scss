@@ -5,13 +5,12 @@
 }
 
 .fondoMain {
-    background-image: url("../images/fondo.jpg");
     background-repeat: no-repeat;
     background-position: 80%;
+    background-image: url("../images/fondo.jpg");
     &:hover {
+        @extend .fondoMain;
         background-image: url("../images/fondo1.jpg");
-        background-repeat: no-repeat;
-        background-position: 80%;
         transition: all 2s;
     }
 }
@@ -30,16 +29,16 @@
 .titulo {
     color: #ffffff;
     font-family: 'Hind', sans-serif;
-    font-size: 75px;
     text-align: center;
+    font-size: 75px;
     text-shadow: 3px 3px #000000;
 }
 
 .titulo2 {
     font-family: 'Hind', sans-serif;
     color: #ffffff;
-    font-size: 30px;
     text-align: center;
+    font-size: 30px;
     text-shadow: 2px 2px #000000;
 }
 

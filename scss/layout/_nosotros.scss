@@ -8,17 +8,8 @@
     text-shadow: 2px 2px #000000;
 }
 
-.tituloConoce {
-    font-family: 'Source Sans Pro', sans-serif;
-    text-align: center;
-    line-height: normal;
-    border: solid 1px;
-    background-color: $fondoTitulos;
-    color: #ffffff;
-    font-size: 24px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-radius: 10px;
+.tituloNosotros {
+    @include tituloPrincipal;
 }
 
 .flex-nosotros {

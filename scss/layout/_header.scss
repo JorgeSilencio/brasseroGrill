@@ -7,8 +7,10 @@
 /*Desktop*/
 @media (min-width:1043px) {
     .header {
-    @extend .header;
+    grid-area: header;
+    font-family: 'Hind', sans-serif;
     text-align: center;
     margin: auto;
     }
 }
+ 

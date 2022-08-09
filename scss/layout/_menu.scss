@@ -1,13 +1,6 @@
 /*Sección menú*/
 .tituloMenu {
-    font-family: 'Hind', sans-serif;
-    text-align: center;
-    line-height: normal;
-    border: solid 1px;
-    background-color: $fondoTitulos;
-    color: #ffffff;
-    font-size: 24px;
-    margin-bottom: 10px;
+    @include tituloPrincipal;
 }
 
 .menuBrassero {
