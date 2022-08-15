@@ -15,7 +15,7 @@ font-family: 'Source Sans Pro', sans-serif;
   font-family: 'Hind', sans-serif; }
 
 /*Desktop*/
-@media (min-width: 991px) {
+@media (min-width: 1043px) {
   .header {
     grid-area: header;
     font-family: 'Hind', sans-serif;
@@ -27,22 +27,13 @@ font-family: 'Source Sans Pro', sans-serif;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 8fr;
-  grid-template-areas: "header"
- "principal"
- "noticia"
- "boletin"
- "redes"
- "footer"; }
+  grid-template-areas: "header" "principal" "noticia" "boletin" "redes" "footer"; }
 
 .layoutSecciones {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 8fr;
-  grid-template-areas: "header"
- "principal"
- "boletin"
- "redes"
- "footer"; }
+  grid-template-areas: "header" "principal" "boletin" "redes" "footer"; }
 
 /*Tablet*/
 @media (min-width: 750px) {
@@ -51,36 +42,28 @@ font-family: 'Source Sans Pro', sans-serif;
     display: grid;
     grid-template-columns: 3fr 7fr 3fr;
     grid-template-rows: 1fr 10fr 1fr;
-    grid-template-areas: "redes redes header"
- "noticia principal principal"
- "boletin footer footer"; }
+    grid-template-areas: "redes header header" "noticia principal principal" "boletin footer footer"; }
   .layoutSecciones {
     height: 100vh;
     display: grid;
     grid-template-columns: 3fr 7fr 3fr;
     grid-template-rows: 1fr 10fr 1fr;
-    grid-template-areas: "redes redes header"
- "principal principal principal"
- "boletin footer footer"; } }
+    grid-template-areas: "redes header header" "principal principal principal" "boletin footer footer"; } }
 
 /*Desktop*/
-@media (min-width: 991px) {
+@media (min-width: 1043px) {
   .layoutIndex {
     height: 100vh;
     display: grid;
     grid-template-columns: 2fr 10fr 2fr;
     grid-template-rows: 1fr 10fr 1fr;
-    grid-template-areas: "header header header"
- "noticia principal principal"
- "boletin footer redes"; }
+    grid-template-areas: "header header header" "noticia principal principal" "boletin footer redes"; }
   .layoutSecciones {
     height: 100vh;
     display: grid;
     grid-template-columns: 2fr 10fr 2fr;
     grid-template-rows: 1fr 10fr 1fr;
-    grid-template-areas: "header header header"
- "principal principal principal"
- "boletin footer redes"; } }
+    grid-template-areas: "header header header" "principal principal principal" "boletin footer redes"; } }
 
 /*Noticia*/
 .noticia {
